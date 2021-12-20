@@ -1,0 +1,17 @@
+import { createAction } from "@reduxjs/toolkit";
+
+const PROFILE_EDIT = createAction("PROFILE_EDIT");
+const PROFILE_LOCATIONS_FETCH = createAction("PROFILE_LOCATIONS_FETCH");
+const PROFILE_LOCATION_ADD = createAction("LOCATION_ADD");
+const PROFILE_LOCATION_EDIT = createAction("LOCATION_EDIT");
+const PROFILE_ARTICLE_ADD = createAction("ARTICLE_ADD");
+const PROFILE_ARTICLE_EDIT = createAction("ARTICLE_EDIT");
+
+export {
+  PROFILE_LOCATIONS_FETCH,
+  PROFILE_EDIT,
+  PROFILE_LOCATION_ADD,
+  PROFILE_LOCATION_EDIT,
+  PROFILE_ARTICLE_ADD,
+  PROFILE_ARTICLE_EDIT,
+};

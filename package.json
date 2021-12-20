@@ -1,0 +1,57 @@
+{
+  "name": "azadi-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@emotion/react": "^11.5.0",
+    "@emotion/styled": "^11.3.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.16",
+    "@mui/icons-material": "^5.0.5",
+    "@mui/material": "^5.0.3",
+    "@mui/styled-engine-sc": "^5.0.3",
+    "@reduxjs/toolkit": "^1.6.2",
+    "axios": "^0.21.4",
+    "google-map-react": "^2.1.10",
+    "moment": "^2.29.1",
+    "next": "^11.1.2",
+    "next-auth": "^3.29.0",
+    "next-redux-wrapper": "^7.0.5",
+    "nookies": "^2.5.2",
+    "pg": "^8.7.1",
+    "postcss": "^8.3.11",
+    "postcss-loader": "^6.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-markdown": "^6.0.3",
+    "react-moment": "^1.1.1",
+    "react-redux": "^7.2.5",
+    "redux-saga": "^1.1.3",
+    "rehype-raw": "^6.1.0",
+    "remark-gfm": "^3.0.0",
+    "styled-components": "^5.3.1",
+    "swiper": "^6.8.4"
+  },
+  "devDependencies": {
+    "customize-cra": "latest",
+    "react-app-rewired": "^2.1.8"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azadi-food/azadi-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azadi-food/azadi-app/issues"
+  },
+  "homepage": "https://github.com/azadi-food/azadi-app#readme"
+}
