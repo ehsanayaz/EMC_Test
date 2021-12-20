@@ -6,7 +6,7 @@ const LocationsPage = ({ locations }) => {
   return (
     <LocationsContainer {...{ locations }}>
       <Filter />
-      <Result {...{ locations, route: "locations" }} />
+      <Result {...{ locations, route: "locations" }}  />
     </LocationsContainer>
   );
 };

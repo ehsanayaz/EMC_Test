@@ -3,7 +3,9 @@ export const OffersBanner = ({ title, images = [] }) => {
     <>
       <div className="container">
         <h2>{title}</h2>
-        <Tiles images={images} />
+        <Tiles 
+          images={images}
+        />
       </div>
       <style jsx>{`
         .container {
@@ -15,9 +17,7 @@ export const OffersBanner = ({ title, images = [] }) => {
         }
         h2 {
           text-align: center;
-          color: #164772;
           padding: 20px;
-          padding-top: 10vh;
           font-size: 36px;
         }
       `}</style>
@@ -30,7 +30,9 @@ import { Image } from "components/generic";
 const Tiles = ({ images }) => {
   return (
     <>
-      <div className="container">
+      <div 
+      className="container"
+      >
         {images.map(({ id, title, image }) => {
           return (
             <div key={id}>
@@ -58,7 +60,6 @@ const Tiles = ({ images }) => {
 					margin-bottom: 40px;
         }
         h3 {
-          color: #164772;
           margin-top: 20px;
         }
       `}</style>

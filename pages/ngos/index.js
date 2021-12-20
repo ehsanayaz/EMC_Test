@@ -5,17 +5,21 @@ const Home = ({ ngosPage }) => {
   return (
     <>
       <section>
-        <h1>{ngosPage.title}</h1>
+        <h1 style={{ textAlign: 'center', paddingBottom: '40px'}}>
+          {ngosPage.title}
+        </h1>
         {ngosPage.ngos.map((ngo) => {
-          return <NGOCard ngo={ngo} key={ngo.id} />;
+          return (
+           <div style={{
+             display: 'flex',
+             justifyContent: 'center',
+           }}>
+              <NGOCard ngo={ngo} key={ngo.id} />
+           </div>
+          )
         })}
       </section>
-      <style jsx>{`
-        h1 {
-          text-align: center;
-          padding-bottom: 40px;
-        }
-      `}</style>
+     
     </>
   );
 };

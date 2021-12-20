@@ -47,40 +47,50 @@ export const Filter = () => {
 
   return (
     <>
-      <MuiAccordion className="filter-accordion">
-        <MuiAccordionSummary>
-          <Typography variant="h7" sx={{ alignSelf: "center" }}>
-            Add Filters
-          </Typography>
-          <FilterChips filters={filters} handleDelete={handleDelete} />
-        </MuiAccordionSummary>
-        <MuiAccordionDetails>
-          <Form type="filters">
-            <RadioFilters
-              title="Categories"
-              name="categories"
-              values={catValues}
-              handleChange={handleChange}
-            />
-            <RadioFilters
-              title="Shop Type"
-              name="shop-type"
-              values={shopValues}
-              handleChange={handleChange}
-            />
-          </Form>
-        </MuiAccordionDetails>
-      </MuiAccordion>
-      <style jsx global>{`
-      .filter-accordion {
-        background-color: transparent;
-        box-shadow: none;
-      }
-      .filter-accordion * {
+     <div style={{ 
+      display: 'flex',
+      justifyContent: 'center',
+      paddingTop: '10px',
 
-      }
+     }}>
+       <MuiAccordion className="filter-accordion" >
+         <div style={{ 
+           display: 'flex', 
+           justifyContent: 'center',
 
-      `}</style>
+           }} >
+          <MuiAccordionSummary >
+              <Typography variant="h7" 
+                style={{ 
+                  alignSelf: "center", 
+                  fontSize:'120%',
+                  fontFamily: "Comic Sans MS",
+
+                }}>
+                Add Filters
+              </Typography>
+              <FilterChips filters={filters} handleDelete={handleDelete} />
+            </MuiAccordionSummary>
+         </div>
+          <MuiAccordionDetails>
+            <Form type="filters">
+              <RadioFilters
+                title="Categories"
+                name="categories"
+                values={catValues}
+                handleChange={handleChange}
+              />
+              <RadioFilters
+                title="Shop Type"
+                name="shop-type"
+                values={shopValues}
+                handleChange={handleChange}
+              />
+            </Form>
+          </MuiAccordionDetails>
+        </MuiAccordion>
+
+     </div>
     </>
   );
 };

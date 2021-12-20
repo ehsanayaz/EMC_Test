@@ -45,9 +45,9 @@ const Mainbar = ({ toggleDrawer, linksArray, isLoggedIn, children }) => {
     <>
       <AppBar position="fixed" sx={{ 
         minHeight: "7vh",
-        backgroundColor: "rgb(250,255,255)",
+        backgroundColor: "#bfc2c7",
         color:'black',
-        fontFamily: 'sans-serif'
+        // fontFamily: 'sans-serif'
          }}>
         <Toolbar
           text="rgba(0,0,0)"

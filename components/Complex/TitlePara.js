@@ -19,7 +19,6 @@ export const TitlePara = ({ title, paragraph }) => {
           font-family: "Work sans", Sans-serif;
           font-size: 36px;
           font-weight: 600;
-          color: #164772;
 					margin-bottom: 18px;
         }
       `}</style>
@@ -29,7 +28,6 @@ export const TitlePara = ({ title, paragraph }) => {
 					font-size: 16px;
           font-family: "Work sans", Sans-serif;
 					line-height: 26px;
-					color: #676767
         }
       `}</style>
     </>

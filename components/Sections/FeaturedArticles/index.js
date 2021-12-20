@@ -39,9 +39,7 @@ export const FeaturedArticles = ({ topArticles }) => {
       <style jsx>{`
         h2 {
           text-align: center;
-          color: #164772;
           padding: 20px;
-          padding-top: 10vh;
           font-size: 36px;
           width: 100%;
         }
