@@ -22,7 +22,7 @@ export const Footer = () => {
         <div className="container-top">
           <Logo url={bigLogo?.url} />
           <ContactInfo {...contactInfo} />
-          <FooterArticles articles={latest5Articles} />
+          {/* <FooterArticles articles={latest5Articles} /> */}
         </div>
         <div className="container-bottom">
           <p className="copyright">
@@ -37,8 +37,7 @@ export const Footer = () => {
 
       <style jsx>{`
         .container {
-          color: white;
-          background-color: #1a4060;
+          background-color: #bfc2c7;
           padding: 50px;
           margin-bottom: 5vh;
           font-weight: 400;
@@ -59,21 +58,20 @@ export const Footer = () => {
         }
         .container-bottom {
           padding-top: 50px;
-          border-top: 2px solid #204e75;
+          border-top: 2px solid black;
         }
-        .copyright {
-          color: #e0e0e0;
-        }
+        // .copyright {
+        //   color: #e0e0e0;
+        // }
       `}</style>
       <style jsx global>{`
         .footer h3 {
-          color: white;
           font-size: 24px;
           font-weight: 700;
           margin-bottom: 25px;
         }
         .svg-inline--fa {
-          color: #1273eb;
+          color: black;
           font-size: 20px;
         }
       `}</style>
@@ -128,7 +126,6 @@ const ContactInfo = ({ title, location, email, mobile = "", openHours }) => {
       <style jsx>{``}</style>
       <style jsx>{`
         .contact-info ul li span {
-          color: #e0e0e0;
           padding-left: 45px;
           font-size: 16px;
         }
@@ -144,7 +141,7 @@ const ContactInfo = ({ title, location, email, mobile = "", openHours }) => {
 const FooterArticles = ({ articles }) => {
   return (
     <>
-      <div className="container">
+      <div className="container" >
         <h3>Latest Posts</h3>
         <ul>
           {articles.map(({ slug, image, categories, title, created_at }) => {

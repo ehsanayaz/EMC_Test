@@ -4,16 +4,13 @@ import { Map } from "components/Locations";
 export const LocationsContainer = ({ locations, children }) => {
   return (
     <Fragment>
-      <section className="locations-container">{children}</section>
+      <section 
+        className="locations-container" style={{ position: "relative"}}>
+        {children}
+      </section>
       <aside className="map-container">
         <Map {...{ locations }} />
       </aside>
-      <style jsx>{`
-        .locations-container {
-          position: relative;
-          background-color: #f1ffff;
-        }
-      `}</style>
     </Fragment>
   );
 };

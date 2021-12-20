@@ -9,7 +9,15 @@ export const NGOCard = ({
   });
   return (
     <>
-      <div className="card">
+      <div className="card" style={{
+        backgroundColor: "#bfc2c7",
+        maxWidth: '900px',
+        display: 'flex',
+        flexWrap: "wrap",
+        margin: "20px 0",
+        padding: "0 40px",
+        borderRadius: '25px',
+      }}>
         <section>
           <div className="title">
             <a href={url} target="_blank">
@@ -31,12 +39,7 @@ export const NGOCard = ({
       </div>
       <style jsx>{`
         .card {
-          background-color: aliceblue;
-          max-width: 900px;
-          display: flex;
-          flex-wrap: wrap;
-          margin: 20px 0;
-          padding: 0 40px;
+          
         }
 
         section {

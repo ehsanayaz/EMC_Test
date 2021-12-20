@@ -17,8 +17,23 @@ const Nav = () => {
 
   return (
     <>
-      <nav style={{ zIndex: 1000 }}>
-        <Mainbar {...{ toggleDrawer, linksArray, isLoggedIn }}>
+      <nav
+       style={{ 
+          // borderBottom: '5px dotted #eee',
+          // boxShadow: 'none',
+          // backgroundColor: 'rgb(20,20,20)',
+          // position: 'absolute',
+          // top: '0px',
+          // left: '0px',
+          // right: '0px',
+          // zIndex: '10',
+          // height:' 78px',
+      }}
+      >
+        <Mainbar {...{ toggleDrawer, linksArray, isLoggedIn }} style={{ 
+          // zIndex: 1000,
+        
+        }}>
           <ProfileInfo isLoggedIn={isLoggedIn} />
         </Mainbar>
         <Sidebar {...{ toggleDrawer, isOpen, linksArray, isLoggedIn }}>

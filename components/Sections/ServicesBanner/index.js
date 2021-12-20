@@ -10,7 +10,8 @@ export const ServicesBanner = ({ title, images = [] }) => {
       </div>
       <style jsx>{`
         .container {
-          background-color: #164772;
+          background-color: #bfc2c7;
+          color: 'black';
           height: fit-content;
           padding-bottom: 40px;
           font-family: "Work sans", Sans-serif;
@@ -23,7 +24,6 @@ export const ServicesBanner = ({ title, images = [] }) => {
         h2 {
           font-size: 36px;
           text-align: center;
-          color: #efd150;
           padding: 20px;
           padding-top: 10vh;
         }
